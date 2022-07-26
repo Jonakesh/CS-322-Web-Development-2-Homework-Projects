@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../../images/icon.png">
+<meta charset="utf-8">
+<meta name="author" content="Akrom S">
+
+<title>Seesaw</title>
+<style>
+  canvas {border: thin solid black;}
+  .myCanvas {
+    width: 500px;
+    height: 500px;
+    position: relative;
+  }
+  .buttons {text-align: center;}
+</style>
+<script src="seesaw.js"></script>
+</head>
+
+<body onload="initialize();">
+<div class="myCanvas">
+  <canvas id="canvas" width="500" height="400">
+  </canvas>
+  <br><br>
+  <div class="buttons">
+    <input type="button" value="Reposition" onclick="reposition();">
+    <input onclick="change();" type="button" value="Start" id="myButton1">
+  </div>
+</div>
+</body>
+</html>
